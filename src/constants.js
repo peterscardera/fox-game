@@ -4,6 +4,9 @@ export const RAIN_CHANCE = 0.3;
 export const SCENES = ["day", "rain"];
 export const DAY_LENGTH = 50;
 export const NIGHT_LENGTH = 4;
-
-export const getNextHungerTime = (clock) => Math.floor(Math.random() * 3) + 5;
-export const getNextDieTime = (clock) => Math.floor(Math.random() * 2) + 3;
+export const getNextHungerTime = (clock) =>
+  Math.floor(Math.random() * 3) + 8 + clock;
+export const getNextDieTime = (clock) =>
+  Math.floor(Math.random() * 3) + 3 + clock;
+export const getNextPoopTime = (clock) =>
+  Math.floor(Math.random() * 3) + 8 + clock;
