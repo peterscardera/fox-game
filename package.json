@@ -2,10 +2,11 @@
   "name": "Fox",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
-    "start": "parcel src/index.html",
-    "dev": "parcel src/index.html",
+    "start": "parcel index.html",
+    "deploy": "gh-pages -d build",
+    "dev": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
