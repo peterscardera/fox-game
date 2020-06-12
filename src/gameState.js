@@ -63,7 +63,7 @@ const gameState = {
     if (
       ["SLEEP", "FEEDING", "CELEBRATING", "HATCHING"].includes(this.current)
     ) {
-      // do nothing
+      // dont do anything
       return;
     }
 
@@ -164,7 +164,7 @@ const gameState = {
     modScene("dead");
     modFox("dead");
     this.clearTimes();
-    writeModal("The fox died :( <br/> Press the middle button to start");
+    writeModal("The fox died :( <br/> Press the middle button to restart");
   },
 };
 
